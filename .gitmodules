@@ -1,6 +1,6 @@
 [submodule "third_party/openthread/repo"]
 	path = third_party/openthread/repo
-	url = https://github.com/abtink/openthread.git
+	url = https://github.com/gabekassel/openthread.git
 	branch = srp/anycast-service-tlv
 [submodule "third_party/cJSON/repo"]
 	path = third_party/cJSON/repo
