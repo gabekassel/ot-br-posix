@@ -422,6 +422,9 @@ void TrelDnssd::OnBecomeReady(void)
 {
     if (IsReady())
     {
+        mRegisterInfo.mInstanceName = std:string("teststring");
+        otbrLogInfo("TREL DNS-SD Is Now Ready: Netif=%s(%u), SubscriberId=%u, Register=%s!", mTrelNetif.c_str(),
+                    mTrelNetifIndex, mSubscriberId, mRegisterInfo.mInstanceName.c_str());
 
         if (mSubscriberId > 0)
         {
