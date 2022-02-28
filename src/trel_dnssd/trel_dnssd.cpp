@@ -192,7 +192,6 @@ void TrelDnssd::OnMdnsPublisherReady(void)
     VerifyOrExit(IsInitialized());
 
     otbrLogDebug("mDNS Publisher is Ready");
-    break;
     mMdnsPublisherReady = true;
     RemoveAllPeers();
 
@@ -423,8 +422,6 @@ void TrelDnssd::OnBecomeReady(void)
 {
     if (IsReady())
     {
-        otbrLogInfo("TREL DNS-SD Is Now Ready: Netif=%s(%u), SubscriberId=%u, Register=%s!", mTrelNetif.c_str(),
-                    mTrelNetifIndex, mSubscriberId, mRegisterInfo.mInstanceName.c_str());
 
         if (mSubscriberId > 0)
         {
