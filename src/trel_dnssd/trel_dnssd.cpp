@@ -192,6 +192,7 @@ void TrelDnssd::OnMdnsPublisherReady(void)
     VerifyOrExit(IsInitialized());
 
     otbrLogDebug("mDNS Publisher is Ready");
+    break;
     mMdnsPublisherReady = true;
     RemoveAllPeers();
 
